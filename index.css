@@ -1,0 +1,140 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+body{
+    background-image: url("./eutah-mizushima-OWwK_0_EnxY-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.h22{
+    color: white;
+    padding: 10px;
+}
+#cityid{
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px 0px 0px 10px;
+}
+#locationbtn{
+    padding: 10px;
+    width: 150px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+#locationbtn:hover{
+    background-color: rgba(233, 36, 36, 0.849);
+    cursor: pointer;
+}
+#currentid{
+    padding: 10px;
+    width: 150px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+#currentid:hover{
+    background-color: rgba(233, 36, 36, 0.836);
+    cursor: pointer;
+}
+.card{
+    backdrop-filter: blur(30px);
+    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+    border: 2px solid rgba(255,255,255,0.18);
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    & p{
+        font-size: 22px;
+        color: black;
+    }
+    & h2{
+        font-size: 32px;
+        font-weight: 500;
+    }
+}
+/*.wdata{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 12px;
+    & .weatherleft{
+        grid-column: span 1;
+        & .currentweather{
+            
+            & p{
+                color: black;
+            }
+            & h2{
+                margin: 7px 0;
+            }
+        }
+        & .cfooter p{
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+    }
+}*/
+.wdata{
+    display: flex;
+    justify-content: center;
+    & .cfooter p{
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+}
+
+.wicon{
+    & img{
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border-radius: 20px;
+    }
+}
+.wicon2{
+    & img{
+        width: 100px;
+        height: 50 px;
+        margin: 20px;
+        border-radius: 50px;
+    }
+}
+.forcastitem{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    margin-bottom: 15px;
+}
+.wicon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    font-weight: bolder;
+}
+p{
+    font-weight: bolder;
+}
+/*Media Query*/
+@media(max-width: 723px){
+    .header{
+        display: block;
+    }
+    .weatherinput{
+        display: block;
+    }
+}
+
